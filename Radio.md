@@ -81,4 +81,4 @@ Esta IP la utilizaremos para establecer la IP estática de cada VM en la configu
     |-------|-----------|
     | http://localhost:8000/Nombre | http://IP:8000/Nombre |
 
-    Dejo un [video](radio) de como debe quedar
+    Dejo un [video](Streaming%20de%20radio.mp4) de como debe quedar
