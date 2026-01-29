@@ -34,7 +34,7 @@ Ahora haremos un cambio de contenedor con lo siguiente:
 ffmpeg -i original.mp4 -c:v copy -c:a copy salida.mkv
 ```
 
-Al hacer esto obtendremos un archivo `.mkv` que tiene un peso un poco menor al original que **no llega a ser significativo**, ademas de esto vamos que **sube muy poco el consumo de la cpu y es rapido** (ya que no es una alta compresión).
+Al hacer esto obtendremos un archivo `.mkv` que tiene un peso un poco menor al original que **no llega a ser significativo**, ademas de esto vamos que **sube muy poco el consumo de la CPU y es rapido** (ya que no es una alta compresión).
 
 Ahora haremos cambios de códecs y comparación.
 
@@ -52,7 +52,7 @@ h265_2mbps.mp4
 ```
 > Este caso también hara una exigencia importante para la CPU y un poco más de tiempo.
 
-Ahora para hacer comparaciones de rendimiento reproducimos los video y pausamos en cualquier escena con mucho movimiento al hacer esto veremos que el archivo `h264_2mbps.mp4` Tiene más artifacts (pixelado), ademas si revisamos sus pesos veremos que `h264_2mbps.mp4` pesa un poco menos.
+Ahora para hacer comparaciones de rendimiento reproducimos los videos y pausamos en cualquier escena con mucho movimiento al hacer esto veremos que el archivo `h264_2mbps.mp4` Tiene más artifacts (pixelado), ademas si revisamos sus pesos veremos que `h264_2mbps.mp4` pesa un poco menos.
 
 > Esto se debe a que el `h264_2mbps.mp4` es más comprimido generando más fallos visuales pero tiene un menor peso.
 
