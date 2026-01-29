@@ -54,6 +54,8 @@ h265_2mbps.mp4
 
 Ahora para hacer comparaciones de rendimiento reproducimos los videos y pausamos en cualquier escena con mucho movimiento al hacer esto veremos que el archivo `h264_2mbps.mp4` Tiene más artifacts (pixelado), ademas si revisamos sus pesos veremos que `h264_2mbps.mp4` pesa un poco menos.
 
+![Imagen de la comparación](Imagen_Video.png)
+
 > Esto se debe a que el `h264_2mbps.mp4` es más comprimido generando más fallos visuales pero tiene un menor peso.
 
 ## Simulación de streaming con diferentes tipos de fichero.
