@@ -36,8 +36,8 @@ Esta IP la utilizaremos para establecer la IP estática de cada VM en la configu
         sudo apt update
         sudo apt install openssh-server -y     #Tambien puede ser acortar a "sudo apt install ssh -y"
     ```
-    > [!Important]
-    > Recordar que no es necesario para la práctica y puede instalarse en ambas VM's
+> [!Important]
+> Recordar que no es necesario para la práctica y puede instalarse en ambas VM's
 
  2. Icecast2
 
@@ -45,9 +45,6 @@ Esta IP la utilizaremos para establecer la IP estática de cada VM en la configu
         sudo apt update
         sudo apt install icecast2 -y
     ```
-    > [!Important]
-    > Solo en la VM que hara de servidor de streaming
-
     Al momento de ejecutar el comando de instalación este nos preguntara si queremos configurar la contraseña de Icecast2 la cual es necesaria para el funcionamiento de Icecast2 por esto seleccionaremos que si
 
     Una vez establecemos los datos solicitados por Icecast2 (dominio, clave y clave de admin), ya podremos acceder por el navegador al puerto 8000 Utilizando las siguientes URL's
@@ -57,6 +54,9 @@ Esta IP la utilizaremos para establecer la IP estática de cada VM en la configu
     | http://localhost:8000 | http://IP:8000 |
 
     Ahora podremos acceder al panel de administrador en caso de querer administrar los emisores
+
+> [!Important]
+> Solo en la VM que hara de servidor de streaming
 
  2. Mixxx
 
@@ -80,11 +80,12 @@ Esta IP la utilizaremos para establecer la IP estática de cada VM en la configu
     Una vez establecidos los valores solo aplicamos y volvemos a la consola de Mixxx
 
     Ahora solo debemos Pulsar ``ON AIR`` colocar una canción instalada Y acceder desde el navegador al servidor de streaming con la ruta de montado (``/Nombre``)
-    > [!Nota]
-    > Deberiamos poder escuchar la emisora desde cualquiera de las dos VM's
 
     | Local | En la red |
     |-------|-----------|
     | http://localhost:8000/Nombre | http://IP:8000/Nombre |
 
-    Dejo un [video](Streaming%20de%20radio.mp4) de como debe quedar
+    Dejo un [video](Streaming%20de%20radio.mp4) de como debe quedar.
+
+> [!Note]
+> Deberiamos poder escuchar la emisora desde cualquiera de las dos VM's
