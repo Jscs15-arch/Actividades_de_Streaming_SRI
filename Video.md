@@ -43,6 +43,7 @@ Crear el fichero en H.264 con un bitrate de 2Mbps:
 ffmpeg -i original.mp4 -c:v libx264 -b:v 2M -c:a copy
 h264_2mbps.mp4
 ```
+>[!Note]
 > Este caso si hara una exigencia importante para la CPU y un poco más de tiempo.
 
 Ahora hay que hacerlo en H.265 con el mismo bitrate:
@@ -50,6 +51,7 @@ Ahora hay que hacerlo en H.265 con el mismo bitrate:
 ffmpeg -i original.mp4 -c:v libx265 -b:v 2M -c:a copy
 h265_2mbps.mp4
 ```
+>[!Note]
 > Este caso también hara una exigencia importante para la CPU y un poco más de tiempo.
 
 Ahora para hacer comparaciones de rendimiento reproducimos los videos y pausamos en cualquier escena con mucho movimiento al hacer esto veremos que el archivo `h264_2mbps.mp4` Tiene más artifacts (pixelado), ademas si revisamos sus pesos veremos que `h264_2mbps.mp4` pesa un poco menos.
@@ -75,7 +77,7 @@ Preguntas finales:
     **Horas que se puede grabar:** (4.000.000 / 2) / 3.600 = 555,5 Horas
     > (Mb / Mbps) / hora en segundos 
 
-2. Red: Tienes una línea de 100 Mbps simétricos. ¿Cuántos usuarios podrían ver el perfil "Móvil" (400 kbps) simultáneamente antes de saturar el 80% de la línea?
+3. Red: Tienes una línea de 100 Mbps simétricos. ¿Cuántos usuarios podrían ver el perfil "Móvil" (400 kbps) simultáneamente antes de saturar el 80% de la línea?
 
     **80% de la línea:** 80Mbps = 80.000kbps
     > Mb a Kb 
